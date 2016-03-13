@@ -1,0 +1,378 @@
+<!Doctype HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-2.1.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/airbnb.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <script src="js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="nav_btn" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span id="icon-bar-id" class="icon-bar top-bar"></span>
+            <span id="icon-bar-id" class="icon-bar middle-bar"></span>
+            <span id="icon-bar-id" class="icon-bar bottom-bar"></span>
+          </button>
+          <a id="title1" class="navbar-brand hide_sm" href="#"></a>
+          <a id="title2" class="navbar-brand hide_lg" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="nav_button redirect"><span class="a_button">Become a host</span></a></li>
+            <li class="dropdown">
+              <a id="help" class="dropdown-toggle" data-toggle="dropdown" href="#">Help ▼</a>
+              <ul id="dropdown-id" class="dropdown-menu">
+                <li><a id="border" class="border drop_a redirect" href="#">Getting Started Guide</a>
+
+                </li>
+                <li><a id="border" class="border drop_a redirect" href="#">Change a reservation as a host</a>
+
+                </li>
+                <li><a id="border" class="drop_a redirect" href="#">How is the price determined for my reservation</a>
+                </li>
+              </ul>
+            </li>
+            <li><a id="sign_up" class="redirect" href="#">Sign Up</a></li>
+            <li><a id="login" class="redirect" href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero_bg">
+      <video preload="auto" loop="loop" class="hero_video hide_sm" autoplay>
+        <source src="images/Paris-P1-0.webm" type="video/webm">
+      </video>
+      <div class="hide_lg hero_img"></div>
+    </div>
+    <div class="hero_content">
+      <div class="content_detail">
+        <div class="head_middle text_center">
+          <h2 class="content_heading text_center">Welcome Home</h2>
+          <h4 class="content_data text_center">Rent unique places to stay from local hosts in 190+ countries.</h4>
+          <div class="search_label2 hide_lg text_center">
+            <span class="label2_input text_center">Where do you want to go</span>
+            <button class="label2_btn text_center"><span class="glyphicon glyphicon-search"></span></button>
+          </div>
+          <a class="content_btn text_center hide_sm redirect">How It Works</a>
+        </div>
+      </div>
+      <div class="content_footer hide_sm">
+        <div class="col-sm-12 text_center">
+          <div class="searchbar text_center">
+            <form class="search_form">
+              <div class="searchbar_wrapper">
+                <label class="search_label">
+                  <input class="label_input" placeholder="Where do you want to go">
+                </label>
+                <div class="date_range">
+                  <input type="text" class="check_date checkin" placeholder="Check in" value="">
+                </div>
+                <div class="date_range">
+                  <input type="text" class="check_date checkout" placeholder="Check out" value="">
+                </div>
+                <label class="guest_label">
+                  <select class="guest_select">
+                    <option class="no_guest"> 1 Guest</option>
+                    <option class="no_guest"> 2 Guests</option>
+                    <option class="no_guest"> 3 Guests</option>
+                  </select>
+                </label>
+              </div>
+              <button class="search_btn"><strong>Search</strong></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="container">
+    <section class="row top_container white_bg">
+      <div class="col-sm-8 hide_sm slideshow_col">
+        <div id="slideshow_container" class="text_center">
+          <ul class="slideshow">
+            <li><img class="img" src="images/li1.jpg"></li>
+            <li><img class="img" src="images/li2.jpg"></li>
+            <li><img class="img" src="images/li3.jpg"></li>
+            <li><img class="img" src="images/li4.jpg"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 hosting_container">
+        <div class="hosting text_center">
+          <div class="hosting_content">
+            <strong>
+                  Hosting opens up a world of opportunity
+                </strong>
+          </div>
+          <div class="hosting_middle">
+
+            Earn money sharing your extra space with travelers.
+
+          </div>
+          <a class="hosting_btn text_center redirect">
+            <strong>See What You Can Earn</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="discover_container text_center">
+    <section class="discover_weekend text_center">
+      <div class="weekend_head text_center">
+        <h2 class='weekend_heading'>
+          <strong>Just for the weekend</strong>
+        </h2>
+        <p class="weekend_para">
+          Discover new, inspiring places close to home.
+        </p>
+      </div>
+      <div class="weekend_tiles">
+        <div class="row">
+          <div class="col col-lg-4 col-md-12 col-sm-12">
+            <div class="tile1 tile text_center">
+              <a class="tile_city text_center redirect">
+                <div>Santa Cruz</div>
+              </a>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div class="tile2 tile">
+              <a class="tile_city redirect">
+                <div>San Francisco</div>
+              </a>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div class="tile3 tile">
+              <a class="tile_city redirect">
+                <div>Monterey</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="destination_container row text_center">
+        <div class="col-lg-4 col-sm-12 dest_div text_center">
+          <a class="redirect">
+            <div class="dest_btn text_center">See all destinations</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="explore_container">
+    <section class="explore_title">
+      <div class="explore_head text_center">
+        <strong>Explore the world</strong>
+      </div>
+      <div class="explore_para text_center">
+        <p>
+          See where people are traveling, all around the world.
+        </p>
+      </div>
+    </section>
+    <section class="explore_tiles text_center">
+      <div class="row">
+        <div class="col col-lg-8 col-md-12">
+          <div class="exp1 tile">
+            <a class="tile_city redirect">
+              <div>Lake Tahoe</div>
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 hide_md hide_sm">
+          <div class="exp6 tile">
+            <a class="tile_city redirect">
+              <div>Andrea's Home</div>
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 hide_sm">
+          <div class="exp4 tile">
+            <a class="tile_city redirect">
+              <div>New York</div>
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6">
+          <div class="exp3 tile">
+            <a class="tile_city redirect">
+              <div>Los Angeles</div>
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 hide_sm">
+          <div class="exp2 tile">
+            <a class="tile_city redirect">
+              <div>San Diego</div>
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 hide_sm">
+          <div class="exp6 tile">
+            <a class="tile_city redirect">
+              <div>Portland</div>
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-8 col-md-12">
+          <div class="exp7 tile">
+            <a class="tile_city redirect">
+              <div>Paris</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="community hide_sm">
+    <section class="community_head text_center">
+      <div class="community_title text_center"><strong>Our Community</strong></div>
+    </section>
+    <section class="community_container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 comm_col">
+          <div class="community1 comm_disp text_center">
+            <div class="c_va">
+              <div class="c_1 w_color"></div>
+              <div class="c_2">
+                <img class="c_2_img" src="images/community1.png">
+              </div>
+              <div class="c_3  w_color">Make Airbnb yours
+                <p class="comm_btm_content w_color text_center">
+                  <a class="w_color text_center redirect">Create your symbol, Tell your story</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 comm_col ">
+          <div class="community2 comm_disp text_center">
+            <div class="comm_head text_center">
+              <div class="comm2_title comm_title w_color text_center"><strong>Traveling</strong></div>
+            </div>
+            <div class="comm2_btm comm_btm text_center">
+              <div class="comm_btm_head  w_color text_center"><strong>Alice & Chris</strong>
+                <p class="comm_btm_content w_color text_center">Across an ocean or across town, Alice & Chris are always in search of local experiences.
+                  <br>
+                  <br> <a class="w_color text_center redirect">Learn more about travel on Airbnb.</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-sm-6 comm_col">
+          <div class="community3 comm_disp text_center">
+            <div class="comm_head text_center">
+              <div class="comm3_title comm_title w_color text_center"><strong>Business Travel</strong></div>
+            </div>
+            <div class="comm2_btm comm_btm text_center">
+              <div class="comm_btm_head  w_color text_center"><strong>Airbnb for Business</strong>
+                <p class="comm_btm_content w_color text_center">
+                  Feel at home, wherever your work takes you.
+                  <br>
+                  <br> <a class="w_color text_center redirect">Get your team on airbnb</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 comm_col">
+          <div class="community4 comm_disp text_center">
+            <div class="comm_head text_center">
+              <div class="comm4_title comm_title w_color text_center"><strong>Hosting</strong></div>
+            </div>
+            <div class="comm2_btm comm_btm text_center">
+              <div class="comm_btm_head  w_color text_center"><strong>Nina</strong>
+                <p class="comm_btm_content w_color text_center">
+                  A professional photographer, Nina loves helping guests explore Shanghai’s arts scene.
+                  <br>
+                  <br> <a class="w_color text_center redirect">Learn more about hosting on Airbnb.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <footer>
+    <section class="footer_container text_center">
+      <div class="row">
+        <div class="col-sm-3 lang_col">
+          <div class="lang">
+            <select class="lang_select">
+              <option class="lang_opt ">English</option>
+              <option class="lang_opt">Spanish</option>
+            </select>
+          </div>
+          <div class="curr">
+            <select class="curr_select">
+              <option class="curr_opt">USD</option>
+              <option class="curr_opt">UAH</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-2 company_col">
+          <h2 class="company_title f_title">Company</h2>
+          <ul class="company_list f_list">
+            <li><a class="company_items">About</a></li>
+            <li><a class="company_items">Careers</a></li>
+            <li><a class="company_items hide_sm">Press</a></li>
+            <li><a class="company_items">Blog</a></li>
+            <li><a class="company_items">Help</a></li>
+            <li><a class="company_items">Polices</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 hide_sm">
+          <h2 class="f_title">Discover</h2>
+          <ul class="f_list">
+            <li><a class="company_items">Trust & Safety</a></li>
+            <li><a class="company_items">Travel Credit</a></li>
+            <li><a class="company_items">Gift Cards</a></li>
+            <li><a class="company_items">Airbnb Picks</a></li>
+            <li><a class="company_items">Mobile</a></li>
+            <li><a class="company_items">Airbnb Action</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 hide_sm">
+          <h2 class="f_title">Hosting</h2>
+          <ul class="f_list">
+            <li><a class="company_items">Why Host</a></li>
+            <li><a class="company_items">Hospitality</a></li>
+            <li><a class="company_items">Responsible Hosting</a></li>
+            <li><a class="company_items">Home safety</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="h_line">
+      <section class="social text_center">
+        <div class="social_title text_center">
+          <h2 class="fs_title text_center">Join Us On</h2>
+          <ul class="social_list">
+            <li>
+              <a class="social_icon fb redirect"></a>
+            </li>
+            <li>
+              <a class="social_icon li redirect"></a>
+            </li>
+            <li>
+              <a class="social_icon git redirect"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </footer>
+</body>
