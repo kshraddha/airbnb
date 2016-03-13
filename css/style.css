@@ -595,27 +595,27 @@ li {
 }
 
 .exp2 {
-  background-image: url(../images/explore.jpg);
+  background-image: url(../images/sonoma.jpg);
 }
 
 .exp3 {
-  background-image: url(../images/explore3.jpg);
+  background-image: url(../images/newyork.jpg);
 }
 
 .exp4 {
-  background-image: url(../images/explore4.jpg);
+  background-image: url(../images/losangeles.jpg);
 }
 
 .exp5 {
-  background-image: url(../images/explore5.jpg);
+  background-image: url(../images/sandiego.jpg);
 }
 
 .exp6 {
-  background-image: url(../images/explore6.jpg);
+  background-image: url(../images/portland.jpg);
 }
 
 .exp7 {
-  background-image: url(../images/explore7.jpg);
+  background-image: url(../images/paris.jpg);
 }
 
 .dest_btn {
@@ -985,10 +985,10 @@ select {
 }
 
 .select:after {
-  content: '\25bc';
   position: absolute;
   pointer-events: none;
   color: #82888a;
+  content: '\25bc';
   top: 0;
   bottom: 1px;
   padding-top: 10px;
