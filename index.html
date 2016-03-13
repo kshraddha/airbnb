@@ -55,6 +55,7 @@
       <video preload="auto" poster="images/img2.jpg" loop="loop" class="hero_video hide_sm" autoplay>
         <source src="images/video.mp4" type="video/mp4">
         <source src="images/Paris-P1-0.webm" type="video/webm">
+        <img src="images/img.jpg" class="hero_video" alt="background">
       </video>
       <div class="hide_lg hero_img"></div>
     </div>
@@ -85,11 +86,15 @@
                   <input type="text" class="check_date checkout" placeholder="Check out" value="">
                 </div>
                 <label class="guest_label">
-                  <select class="guest_select">
-                    <option class="no_guest"> 1 Guest</option>
-                    <option class="no_guest"> 2 Guests</option>
-                    <option class="no_guest"> 3 Guests</option>
-                  </select>
+                  <div class="select">
+                    <select class="guest_select">
+                      <option class="no_guest"> 1 Guest</option>
+                      <option class="no_guest"> 2 Guests</option>
+                      <option class="no_guest"> 3 Guests</option>
+                      <option class="no_guest"> 4 Guests</option>
+                      <option class="no_guest"> 4+ Guests</option>
+                    </select>
+                  </div>
                 </label>
               </div>
               <button class="search_btn"><strong>Search</strong></button>
@@ -313,16 +318,20 @@
       <div class="row">
         <div class="col-sm-3 lang_col">
           <div class="lang">
-            <select class="lang_select">
-              <option class="lang_opt ">English</option>
-              <option class="lang_opt">Spanish</option>
-            </select>
+            <div class="select">
+              <select class="lang_select">
+                <option class="lang_opt ">English</option>
+                <option class="lang_opt">Spanish</option>
+              </select>
+            </div>
           </div>
           <div class="curr">
-            <select class="curr_select">
-              <option class="curr_opt">USD</option>
-              <option class="curr_opt">UAH</option>
-            </select>
+            <div class="select">
+              <select class="curr_select">
+                <option class="curr_opt">USD</option>
+                <option class="curr_opt">UAH</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="col-sm-2 company_col">
