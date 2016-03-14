@@ -1,7 +1,9 @@
 body {
   line-height: 1.43;
+  font-size: 14px;
   color: #565a5c;
   background-color: #edefed;
+  font-family: Arial, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -133,6 +135,7 @@ body {
   .company_title {
     text-align: center;
     margin: 0;
+    margin-bottom: 10px;
     font-size: 16px;
     color: white;
     font-weight: bold;
@@ -228,6 +231,7 @@ body {
   .f_title {
     text-align: left;
     margin: 0;
+    margin-bottom: 10px;
     font-size: 16px;
     color: white;
     font-weight: bold;
@@ -485,7 +489,8 @@ guest_label {
   background-color: #ff5a5f;
   border-color: #ff5a5f;
   border-bottom-color: #e00007;
-  border-bottom-width: 1px;
+  border-width: 1px;
+  border-style: solid;
   color: white;
   float: left;
   margin: 0;
@@ -735,13 +740,16 @@ li {
 }
 
 .comm_btm_head {
-  font-size: 24px;
+  padding: 5px 10px;
+  font-size: 32px;
   display: table-cell;
   vertical-align: bottom;
   margin: auto;
 }
 
 .comm_btm_content {
+  font-weight: 400;
+  padding: 5px 10px;
   font-size: 14px;
   margin-bottom: 25px;
   text-decoration: none;
@@ -775,7 +783,7 @@ footer {
 }
 
 .f_list li {
-  padding: 0;
+  padding: 2px 0;
   text-align: left;
   margin: 0;
 }
@@ -783,6 +791,7 @@ footer {
 .company_items {
   font-size: 14px;
   color: white;
+  font-weight: 400;
   text-align: left;
 }
 
