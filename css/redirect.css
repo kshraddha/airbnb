@@ -3,6 +3,8 @@ body {
   background-color: #edefed;
   color: #565a5c;
   overflow-x: hidden;
+  line-height: 1.43;
+  font-family: Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
