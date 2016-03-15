@@ -26,6 +26,19 @@ body {
   .collapse {
     background-color: #edefed;
   }
+  .nav {
+    background-color: #edefed;
+  }
+  .navbar-inverse .navbar-collapse,
+  .navbar-inverse .navbar-form {
+    border: none;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
   #title,
   #help,
   #sign_up,
@@ -169,6 +182,9 @@ body {
   }
   .nav_button {
     padding: 0 19px;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
   #title,
   #help,
@@ -954,10 +970,6 @@ a:hover {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: white;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
 }
 
 .guest_select,
